@@ -1,4 +1,3 @@
-
 # Text to Color Generator
 
 This project is a web application that transforms text input into corresponding RGB color values using a pre-trained deep learning model. The application consists of a Flask backend written in Python and a frontend built with HTML, CSS, and JavaScript, styled with Tailwind CSS.
@@ -29,74 +28,66 @@ Before you begin, ensure you have the following installed:
 - **Python 3.6+**: Download Python from the [official website](https://www.python.org/downloads/).
 - **pip**: Python package installer (usually included with Python installations).
 
-
 ## Installation
 
 Follow these steps to set up the project locally:
 
-1.  **Clone the Repository**
+1. **Clone the Repository**
 
-    ```
-    git clone https://github.com/Hamza-Meer007/Text-to-color-generator.git
-    cd Text-TO-COLOR-GENERATOR
-    ```
+   ```
+   git clone https://github.com/Hamza-Meer007/Text-to-color-generator.git
+   cd Text-TO-COLOR-GENERATOR
+   ```
+2. **Create a Virtual Environment**
 
-2.  **Create a Virtual Environment**
+   It is recommended to create a virtual environment to manage project dependencies.
 
-    It is recommended to create a virtual environment to manage project dependencies.
+   ```
+   python -m venv venv
+   ```
 
-    ```
-    python -m venv venv
-    ```
+   Activate the virtual environment:
 
-    Activate the virtual environment:
+   - On Windows:
 
-    -   On Windows:
+     ```
+     venv\Scripts\activate
+     ```
+   - On macOS and Linux:
 
-        ```
-        venv\Scripts\activate
-        ```
+     ```
+     source venv/bin/activate
+     ```
+3. **Install Python Dependencies**
 
-    -   On macOS and Linux:
+   Install the required Python packages using pip:
 
-        ```
-        source venv/bin/activate
-        ```
-
-3.  **Install Python Dependencies**
-
-    Install the required Python packages using pip:
-
-    ```
-    pip install -r requirements.txt
-    ```
-
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
-1.  **Run the Flask Application**
+1. **Run the Flask Application**
 
-    Ensure your virtual environment is activated and run the Flask application:
+   Ensure your virtual environment is activated and run the Flask application:
 
-    ```
-    python main.py
-    ```
+   ```
+   python main.py
+   ```
 
-    The application will start, and you should see a message indicating the server is running (usually on `http://127.0.0.1:5000`).
+   The application will start, and you should see a message indicating the server is running (usually on `http://127.0.0.1:5000`).
+2. **Open the Application in Your Browser**
 
-2.  **Open the Application in Your Browser**
+   Open your web browser and navigate to the address provided by the Flask application (e.g., `http://127.0.0.1:5000`).
+3. **Enter Text and Generate Color**
 
-    Open your web browser and navigate to the address provided by the Flask application (e.g., `http://127.0.0.1:5000`).
+   - Enter any text in the input field.
+   - Click the "Generate Color" button.
+   - The generated color will be displayed, along with its RGB value.
+4. **Copy RGB Value**
 
-3.  **Enter Text and Generate Color**
-
-    -   Enter any text in the input field.
-    -   Click the "Generate Color" button.
-    -   The generated color will be displayed, along with its RGB value.
-
-4.  **Copy RGB Value**
-
-    Click on the color preview to copy the RGB value to your clipboard.
+   Click on the color preview to copy the RGB value to your clipboard.
 
 ## Project Structure
 
@@ -120,9 +111,9 @@ The model used in this project is a deep learning model trained to associate tex
 
 To retrain or fine-tune the model, you would need:
 
-1.  **Data**: A dataset of text strings and corresponding RGB color values.
-2.  **Training Script**: A Python script to train the model using TensorFlow/Keras.
-3.  **Tokenizer**: Use `tensorflow.keras.preprocessing.text.Tokenizer` to convert text data into numerical sequences. Save the tokenizer configuration to a JSON file for use in the Flask application.
+1. **Data**: A dataset of text strings and corresponding RGB color values.
+2. **Training Script**: A Python script to train the model using TensorFlow/Keras.
+3. **Tokenizer**: Use `tensorflow.keras.preprocessing.text.Tokenizer` to convert text data into numerical sequences. Save the tokenizer configuration to a JSON file for use in the Flask application.
 
 The included `model.h5` and `tokenizer.json` files are the pre-trained model weights and tokenizer configuration, respectively.
 
@@ -130,17 +121,12 @@ The included `model.h5` and `tokenizer.json` files are the pre-trained model wei
 
 Contributions are welcome! If you want to contribute to this project, please follow these steps:
 
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes and commit them with descriptive commit messages.
-4.  Push your changes to your fork.
-5.  Submit a pull request to the main repository.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive commit messages.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for more information.
-<<<<<<< HEAD
-=======
-
->>>>>>> 272e1dd077094688936f6bd19edabb10d070e786
-
